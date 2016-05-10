@@ -6,9 +6,9 @@ import Footer from './Footer.jsx';
 export default function TodoApp() {
     return (
         <div className="todo-container">
-            <AddTodo/>
-            <TodoList/>
-            <Footer/>
+            <AddTodo />
+            <TodoList />
+            <Footer />
         </div>
     );
 }

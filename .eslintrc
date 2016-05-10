@@ -1,8 +1,15 @@
 {
   "plugins": [
-    "meteor"
+    "meteor",
+    "react"
   ],
-  "extends": "airbnb",
+  "extends": [
+    "airbnb"
+  ],
+  "settings": {
+    "pragma": "React",
+    "version": "15.0"
+  },
   "rules": {
     "indent": [
       "error", 4, { "SwitchCase" : 1}
@@ -12,7 +19,9 @@
     ],
     "comma-dangle": [
       "error", "never"
-    ]
+    ],
+    "react/jsx-indent": ["error", 4],
+    "react/jsx-indent-props": ["error", 4]
   },
   "globals": {
     "Mongo": false,

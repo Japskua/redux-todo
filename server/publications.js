@@ -23,7 +23,7 @@ const getTodoPublication = (filter, pageSkip = 0) => {
         default:
             break;
     }
-    
+
     return Todos.find(query, {
         fields: todoPubFields,
         skip: pageSkip,

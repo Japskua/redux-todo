@@ -9,18 +9,23 @@ function AddTodo({ dispatch }) {
     let input;
     return (
         <div>
-        <input ref={function (node)  {
-            input = node;
-        }}/>
-        <button onClick={function () {
-            console.log('YO');
-            dispatch(addTodo(input.value));
-            input.value = '';
-        }}>
-        Add Todo
-    </button>
-    </div>
-);
+            <input
+                ref={function (node) {
+                    input = node;
+                }}
+            />
+            <button
+                onClick={function () {
+                    console.log('YO');
+                    dispatch(addTodo(input.value));
+                    input.value = '';
+                }}
+            >
+            Add Todo
+            </button>
+        </div>
+    );
 }
+AddTodo.propTypes = { dispatch: React.PropTypes.func };
 
 export default connect()(AddTodo);
