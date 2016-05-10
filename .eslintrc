@@ -1,0 +1,21 @@
+{
+  "plugins": [
+    "meteor"
+  ],
+  "extends": "airbnb",
+  "rules": {
+    "indent": [
+      "error", 4, { "SwitchCase" : 1}
+    ],
+    "import/no-unresolved": [
+      "error", { "ignore" : ["^meteor/"]}
+    ],
+    "comma-dangle": [
+      "error", "never"
+    ]
+  },
+  "globals": {
+    "Mongo": false,
+    "Meteor": false
+  }
+}
